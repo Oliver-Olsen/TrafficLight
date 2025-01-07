@@ -1,11 +1,15 @@
 #include <Arduino.h>
+#define REDPIN 10
+#define YELLOWPIN 11
+#define GREENPIN 12
 
 // put function declarations here:
-int myFunction(int, int);
+void redToGreen();
+void greenToRed();
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  redToGreen();
 }
 
 void loop() {
@@ -13,6 +17,10 @@ void loop() {
 }
 
 // put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void redToGreen() {
+  
+}
+
+void greenToRed(){
+
 }
