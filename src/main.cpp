@@ -1,3 +1,7 @@
+//Oliver Olsen s205443
+//Nils Wulff   s223968
+
+
 //2a: 
 //The modulus (%) operator outputs what is left over when the left side is cleanly divided by the number on the right. 
 //This means that 42 % 5 is 2, since 40 can be cleanly divided by 5 and 42 - 40 = 2
