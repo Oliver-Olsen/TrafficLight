@@ -19,6 +19,7 @@ void setup() {
   digitalWrite(REDPIN, HIGH);
   digitalWrite(YELLOWPIN, LOW);
   digitalWrite(GREENPIN, LOW);
+  Serial.println("STOP!"); 
 }
 
 void loop() {
@@ -30,21 +31,21 @@ void loop() {
 
 // put function definitions here:
 void redToGreen() {
-    pinMode(REDPIN, HIGH);
-    delay(10000);
-    pinMode(YELLOWPIN, HIGH);
-    delay(3000);
-    pinMode(REDPIN, LOW);
-    pinMode(YELLOWPIN, LOW);
-    pinMode(GREENPIN, HIGH);
+    digitalWrite(YELLOWPIN, HIGH);
+    Serial.println("Get Ready!"); 
+    delay(2000);
+    digitalWrite(REDPIN, LOW);
+    digitalWrite(YELLOWPIN, LOW);
+    digitalWrite(GREENPIN, HIGH);
+    Serial.println("GO!"); 
 }
 
 void greenToRed(){
-    pinMode(GREENPIN, HIGH);
-    delay(10000);
-    pinMode(GREENPIN, LOW);
-    pinMode(YELLOWPIN, HIGH);
-    delay(3000);
-    pinMode(YELLOWPIN, LOW);
-    pinMode(GREENPIN, HIGH);
+    digitalWrite(GREENPIN, LOW);
+    digitalWrite(YELLOWPIN, HIGH);
+    Serial.println("Slow Down!"); 
+    delay(2000);
+    digitalWrite(YELLOWPIN, LOW);
+    digitalWrite(REDPIN, HIGH);
+    Serial.println("STOP!"); 
 }
