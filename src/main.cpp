@@ -18,9 +18,21 @@ void loop() {
 
 // put function definitions here:
 void redToGreen() {
-  
+    pinMode(REDPIN, HIGH);
+    delay(10000);
+    pinMode(YELLOWPIN, HIGH);
+    delay(3000);
+    pinMode(REDPIN, LOW);
+    pinMode(YELLOWPIN, LOW);
+    pinMode(GREENPIN, HIGH);
 }
 
 void greenToRed(){
-
+    pinMode(GREENPIN, HIGH);
+    delay(10000);
+    pinMode(GREENPIN, LOW);
+    pinMode(YELLOWPIN, HIGH);
+    delay(3000);
+    pinMode(YELLOWPIN, LOW);
+    pinMode(GREENPIN, HIGH);
 }
